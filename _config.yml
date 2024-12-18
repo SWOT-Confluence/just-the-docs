@@ -12,6 +12,6 @@ just_the_docs:
     - title: "Home"
       url: /
     - title: "Introduction"
-      url: /intro
+      url: /guides/intro
     - title: "Advanced Topics"
-      url: /advanced
+      url: /guides/advanced
