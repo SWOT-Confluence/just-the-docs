@@ -12,6 +12,7 @@ just_the_docs:
     - title: "Home"
       url: /
     - title: "guides"
+      url: /guides
       children:
       - title: "Introduction"
         url: /guides/intro
