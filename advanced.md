@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: "Advanced Topics"
 nav_order: 3
 ---
