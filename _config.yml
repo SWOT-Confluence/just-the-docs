@@ -7,6 +7,13 @@ url: https://SWOT-Confluence.github.io/just-the-docs
 aux_links:
   Template Repository: https://github.com/SWOT-Confluence/just-the-docs
 
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+
 just_the_docs:
   navigation: # Define navigation menu
     - title: "Home"
