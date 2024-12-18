@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Advanced Topics"
-parent: "Guides"
 nav_order: 3
 ---
 
