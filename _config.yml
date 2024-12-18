@@ -17,4 +17,4 @@ just_the_docs:
       - title: "Introduction"
         url: /guides/intro
       - title: "Advanced Topics"
-        url: /guides/advanced
+        url: /guides/Running_on_HPC

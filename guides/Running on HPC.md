@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Advanced Topics"
+title: "Running on HPC"
 nav_order: 3
 parent: Guides
 ---
