@@ -1,14 +1,14 @@
-title: "My Documentation Site"
-remote_theme: pmarsceill/just-the-docs # Points to the Just the Docs theme
-search_enabled: true # Enable site search
-aux_links: # Optional: Add links in the navigation bar
-  "GitHub":
-    - url: https://github.com/your-repo
-    - icon: "fab fa-github"
-  
-# Navigation order (optional, you can also define this in the page's front matter)
+title: Just the Docs Template
+description: A starter template for a Jekyll site using the Just the Docs theme!
+theme: just-the-docs
+
+url: https://SWOT-Confluence.github.io/just-the-docs
+
+aux_links:
+  Template Repository: https://github.com/SWOT-Confluence/just-the-docs
+
 just_the_docs:
-  navigation:
+  navigation: # Define navigation menu
     - title: "Home"
       url: /
     - title: "Guides"
@@ -17,9 +17,3 @@ just_the_docs:
           url: /guides/intro/
         - title: "Advanced Topics"
           url: /guides/advanced/
-
-# Optional: Site-wide defaults for Markdown processing
-markdown:
-  kramdown:
-    input: GFM
-    hard_wrap: false

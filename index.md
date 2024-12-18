@@ -4,6 +4,6 @@ title: "Home"
 nav_order: 1
 ---
 
-# Welcome to My Documentation Site
+# Welcome to the Just the Docs Template
 
-This is the homepage for your site. Use the links in the sidebar to navigate!
+This is your homepage. Use the links in the navigation bar to explore!
