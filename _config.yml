@@ -11,7 +11,9 @@ just_the_docs:
   navigation: # Define navigation menu
     - title: "Home"
       url: /
-    - title: "Introduction"
-      url: /guides/intro
-    - title: "Advanced Topics"
-      url: /guides/advanced
+    - title: "guides"
+      children:
+      - title: "Introduction"
+        url: /guides/intro
+      - title: "Advanced Topics"
+        url: /guides/advanced
