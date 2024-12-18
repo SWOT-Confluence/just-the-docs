@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Homerrr"
+title: "Home"
 nav_order: 1
 ---
 
