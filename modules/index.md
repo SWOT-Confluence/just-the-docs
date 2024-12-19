@@ -1,7 +1,7 @@
 ---
 title: Modules
 layout: home
-nav_order: 2
+nav_order: 5
 ---
 # Modules
 The default page layout supports various navigation features:

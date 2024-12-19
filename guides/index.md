@@ -1,7 +1,7 @@
 ---
 title: Guides
 layout: home
-nav_order: 2
+nav_order: 4
 ---
 # Navigation
 The default page layout supports various navigation features:
