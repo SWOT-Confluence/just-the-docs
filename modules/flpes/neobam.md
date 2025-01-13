@@ -2,7 +2,7 @@
 layout: home
 title: "neobam"
 nav_order: 2
-parent: Modules
+parent: flpes
 ---
 
 # Input
