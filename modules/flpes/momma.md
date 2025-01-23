@@ -21,7 +21,7 @@ docker build -t momma .
 singularity build momma.simg docker://travissimmons/momma
 
 singularity run --bind mnt/input:/mnt/data/input,mnt/flpe/momma:/mnt/data/output momma.simg -i 1 -r reaches.json
-
+cd 
 ## Arguments
 
 

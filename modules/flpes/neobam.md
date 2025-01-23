@@ -16,6 +16,8 @@ cd neobam
 
 docker build -t neobam .
 
+docker run -v /mnt/input:/mnt/data/input -v /mnt/flpe/geobam:/mnt/data/output neobam -i 1 -r reaches.json
+
 
 ### HPC
 singularity build neoobam.simg docker://travissimmons/neobam
