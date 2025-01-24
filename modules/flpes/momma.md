@@ -16,12 +16,14 @@ cd momma
 
 docker build -t momma .
 
+sudo docker run -v /mnt/input/:/mnt/data/input -v /mnt/flpe/momma:/mnt/data/output -v ~/.aws:/root/.aws travissimmons/momma:latest -r reaches.json -m 3 -b confluence-sos/unconstrained/0000 -i 0
+
 
 ### HPC
 singularity build momma.simg docker://travissimmons/momma
 
-singularity run --bind mnt/input:/mnt/data/input,mnt/flpe/momma:/mnt/data/output momma.simg -i 1 -r reaches.json
-cd 
+singularity run --bind mnt/input:/mnt/data/input,mnt/flpe/momma:/mnt/data/output momma.simg -i 1 -r reaches.json -m 3
+ 
 ## Arguments
 
 
