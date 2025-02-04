@@ -7,6 +7,32 @@ parent: Guides
 
 # Setting up a run
 
+
+## Setup Commands
+
+gdown "https://drive.google.com/uc?id=your_file_id"
+
+tar -xzvf empty_mnt.tar.gz
+
+git clone https://github.com/SWOT-Confluence/confluence-local.git
+
+git checkout euro
+
+setup and run confluence-local/local_confluence_notebook.ipynb
+
+edit cfl_wrapper.sh for bulk submission or edit the generated .sh file to submit custom arrays
+
+
+
+
+
+
+
+
+
+
+
+
 - download input files
     - link to sword
         - https://drive.google.com/file/d/1Z7bAPSh4jcj0-jJ5ipcFMAsxTFTCJCxP/view?usp=drive_link
@@ -16,6 +42,9 @@ parent: Guides
         - download link for devset jsons in the correct file structure
 
 Here I want to have a link to the most recent full mnt with files like reaches.json.template etc 
+
+
+
 
 
 ### Before moving on ensure you have this file structure
