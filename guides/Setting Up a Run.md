@@ -26,6 +26,27 @@ edit cfl_wrapper.sh for bulk submission or edit the generated .sh file to submit
 
 
 
+## Customizing Modules (need sudo and docker)
+
+Install docker on local machine / server where you have sudo
+
+Create a personal dockerhub (free): https://hub.docker.com/
+
+Create a dockerhub repo named the module eg: for priors my dockerhub repo link is travissimmons/priors
+
+Find the module you are interested in at https://github.com/SWOT-Confluence or fork it to your github so you can save changes
+
+Git clone it
+
+make changes
+
+docker build -t travissimmons/{module name} .
+
+docker push travissimmons/{module name}
+
+setup and run confluence-local/local_confluence_notebook.ipynb
+
+edit cfl_wrapper.sh for bulk submission or edit the generated .sh file to submit custom arrays
 
 
 
