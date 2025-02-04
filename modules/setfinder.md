@@ -19,6 +19,8 @@ docker build -t setfinder .
 
 <!-- docker run -e AWS_BATCH_JOB_ID="foo" -v /mnt/input:/mnt/data/input travissimmons/metroman:latest -r metrosets.json -s local -v -i 0 -->
 
+docker run -v /mnt/input:/data setfinder -r reaches_of_interest.json -c continent-setfinder.json -e -s 16 -o /data -a MetroMan HiVDI SIC NeoBAM -i 3 -n /data
+
 ### HPC
 singularity build setfinder.simg docker://travissimmons/setfinder
 

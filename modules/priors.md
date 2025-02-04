@@ -21,7 +21,7 @@ docker run -v /mnt/input:/mnt/data priors -i 0 -r unconstrained -p usgs riggs gb
 ### HPC
 singularity build priors.simg docker://travissimmons/priors
 
-singularity run -c --bind mnt/input:/mnt/data priors.simg -i 0 -r unconstrained -p usgs riggs gbpriors -g
+singularity run -c --writable-tmpfs  --bind mnt/input:/mnt/data priors.simg -i 2 -r unconstrained -p riggs -g -s local
 
 
 ## Arguments

@@ -17,7 +17,7 @@ cd MOI
 docker build -t moi .
 
 ### HPC
-singularity build postd-moi.simg docker://travissimmons/moi
+singularity build moi.simg docker://travissimmons/moi
 
 singularity run --env AWS_BATCH_JOB_ID="foo" --bind mnt/input:/mnt/data/input,mnt/flpe:/mnt/data/flpe,mnt/moi:/mnt/data/output moi.simg -i 0 -j basin.json -v -b unconstrained -s local
 

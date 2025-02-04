@@ -20,7 +20,7 @@ docker build -t momma .
 ### HPC
 singularity build postd-flpe.simg docker://travissimmons/postd-flpe
 
-singularity run --bind mnt/input:/mnt/data/input,mnt/flpe:/mnt/data/flpe,mnt/diagnostics/postdiagnostics/reach:/mnt/data/output,mnt/output/sos:/mnt/data/results postd-flpe.simg -r reaches.json -t 0.25 -i 0
+singularity run --bind mnt/input:/mnt/data/input,mnt/flpe:/mnt/data/flpe,mnt/diagnostics/postdiagnostics/reach:/mnt/data/output,mnt/output/sos:/mnt/data/results postd-flpe.simg -r reaches.json -t 0.25 -i 0 -l True
 
 ## Arguments
 
