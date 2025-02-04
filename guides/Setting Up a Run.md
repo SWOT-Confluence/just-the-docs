@@ -55,7 +55,7 @@ docker push travissimmons/{module name}
 
 
 
-- download input files
+<!-- - download input files
     - link to sword
         - https://drive.google.com/file/d/1Z7bAPSh4jcj0-jJ5ipcFMAsxTFTCJCxP/view?usp=drive_link
     - link to sos
@@ -100,4 +100,4 @@ Here I want to have a link to the most recent full mnt with files like reaches.j
         - moi
         
 
-- proceed to next section
+- proceed to next section -->
