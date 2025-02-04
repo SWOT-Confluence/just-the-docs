@@ -10,7 +10,9 @@ parent: Guides
 
 ## Setup Commands
 
-gdown "https://drive.google.com/uc?id=your_file_id"
+pip install gdown
+
+gdown 1I3B9Cb9-5NV1xlxgE2Y-YFwtNNYeGvXM
 
 tar -xzvf empty_mnt.tar.gz
 
