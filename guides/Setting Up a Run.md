@@ -20,15 +20,15 @@ git clone https://github.com/SWOT-Confluence/confluence-local.git
 
 git checkout euro
 
+## Running any module
+
 setup and run confluence-local/local_confluence_notebook.ipynb
 
 edit cfl_wrapper.sh for bulk submission or edit the generated .sh file to submit custom arrays
 
+## Customizing a Module (need sudo and docker)
 
-
-## Customizing Modules (need sudo and docker)
-
-Install docker on local machine / server where you have sudo
+Install docker on local machine / server where you have sudo: 
 
 Create a personal dockerhub (free): https://hub.docker.com/
 
@@ -44,9 +44,8 @@ docker build -t travissimmons/{module name} .
 
 docker push travissimmons/{module name}
 
-setup and run confluence-local/local_confluence_notebook.ipynb
 
-edit cfl_wrapper.sh for bulk submission or edit the generated .sh file to submit custom arrays
+
 
 
 
