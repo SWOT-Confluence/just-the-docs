@@ -10,9 +10,9 @@ parent: Guides
 
 ## Setup Commands
 
-pip install gdown
+(pip or conda) install gdown
 
-gdown 1I3B9Cb9-5NV1xlxgE2Y-YFwtNNYeGvXM
+gdown 1xRltFZ1gyP_nvwHMJW-rIgClzXx8CSLC
 
 tar -xzvf empty_mnt.tar.gz
 
@@ -45,7 +45,22 @@ docker build -t travissimmons/{module name} .
 docker push travissimmons/{module name}
 
 
-
+| Module                 | Number of Jobs                   | Description                                                                                                                    |
+|------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Expanded Setfinder     | 7                                | Creates sets (groups of connected reaches) starting with your reaches of interest and looking up and down the river            |
+| Expanded Combine Data  | 1                                | Combines the files generated in the setfinder into continent level data                                                        |
+| Input                  | Number of Reaches                | Pulls reach data from hydrocron and stores them in netcdfs, outputs to /mnt/input/swot                                         |
+| Setfinder              | 7                                | Creates sets (groups of connected reaches) only using the reaches that were pulled successfully using Input                    |
+| Combine Data           | 1                                | Combines files generated in the setfinder into continent level data                                                            |
+| Prediagnostics         | Number of Reaches                | Filters reach data netcdfs based on a series of bitwise filters and outlier detectors. OVERWRITES NETCDFS                      |
+| Priors                 | 7                                | Pulls gauge data from external gauge agencies and builds the prior database (Priors SoS) which is eventually hosted on PO.DAAC |
+| Metroman               | Number of Sets in metrosets.json | Runs the metroman FLPE algorithm, outputs to /mnt/flpe/metroman/sets                                                           |
+| Metroman Consolidation | Number of Reaches                | Takes the set level results of metroman and turns them into individual files, outputs to /mnt/flpe/metroman                    |
+| Momma, Neobam, SAD     | Number of Reaches                | Runs the corrisponding FLPE algorithm                                                                                          |
+| MOI                    | Number of basins in basins.json  | Combines FLPE algorithm results (not currently working because of SWORD v16 topology issues)                                   |
+| Offline                | Number of Reaches                | Runs NASA SDS's discharge algorithm.                                                                                           |
+| Validation             | Number of Reaches                | If there is a validation gauge on the reach then summary stats are produced. (All gauges are validation in unconstrained runs) |
+| Output                 | 7                                | Outputs results netcdf files that store all previous results data, outputs to /mnt/output/sos                                  |
 
 
 
