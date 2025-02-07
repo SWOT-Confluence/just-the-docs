@@ -16,7 +16,7 @@ cd input
 
 docker build -t input .
 
-docker run -v /mnt/input:/mnt/data input -i 0 -r /mnt/data/reaches.json
+docker run -v /mnt/input:/mnt/data input -r /mnt/data/reaches.json -i 0
 
 ### HPC
 singularity build input.simg docker://travissimmons/input
