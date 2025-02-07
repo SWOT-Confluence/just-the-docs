@@ -19,6 +19,10 @@ cd combine_data
 docker build -t combine_data .
 
 <!-- docker run -e AWS_BATCH_JOB_ID="foo" -v /mnt/input:/mnt/data/input travissimmons/metroman:latest -r metrosets.json -s local -v -i 0 -->
+**Expanded**
+docker run -v /mnt/input:/data combine_data -d /data -s 16 -c continent.json -u confluence-dev2-json -e
+
+**Not Expanded**
 docker run -v /mnt/input:/data combine_data -d /data -s 16 -c continent.json -u confluence-dev2-json
 
 ### HPC

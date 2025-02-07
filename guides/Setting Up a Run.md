@@ -7,6 +7,7 @@ parent: Guides
 
 # Setting up a run
 
+This guide is intended to be used on an HPC or Linux machine with Singularity, and SLURM. If these are not present, additional editing will be required.
 
 ## Setup Commands
 
@@ -18,7 +19,6 @@ tar -xzvf empty_mnt.tar.gz
 
 git clone https://github.com/SWOT-Confluence/run-confluence-locally.git
 
-git checkout euro
 
 ## Running any module
 
