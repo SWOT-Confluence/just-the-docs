@@ -16,6 +16,10 @@ cd input
 
 docker build -t input .
 
+or
+
+docker pull travissimmons/input:latest
+
 docker run -v /mnt/input:/mnt/data input -r /mnt/data/reaches.json -i 0
 
 ### HPC
