@@ -16,7 +16,7 @@ gdown 1xRltFZ1gyP_nvwHMJW-rIgClzXx8CSLC
 
 tar -xzvf empty_mnt.tar.gz
 
-git clone https://github.com/SWOT-Confluence/confluence-local.git
+git clone https://github.com/SWOT-Confluence/run-confluence-locally.git
 
 git checkout euro
 
