@@ -2,7 +2,7 @@
 title: flpes
 layout: home
 nav_order: 5
-parent: modules
+parent: flpes
 ---
 # Modules
 The default page layout supports various navigation features:
