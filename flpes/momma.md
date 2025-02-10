@@ -28,17 +28,12 @@ singularity run --bind mnt/input:/mnt/data/input,mnt/flpe/momma:/mnt/data/output
 
 
 #### Dev notes....
-
-ERROR-----
-[1] "bucket_key:  "
-[1] "index:  2"
-[1] "reaches_json:  reaches.json"
-[1] "min_nobs:  "
-[1] "constrained:  FALSE"
-[1] "reach_id:  56427001451"
-[1] "swot_file:  /mnt/data/input/swot/56427001451_SWOT.nc"
-[1] "sos_file:  /mnt/data/input/sos/oc_sword_v16_SOS_priors.nc"
-Error in if (length(width) < min_nobs || length(wse) < min_nobs || length(slope2) <  : 
-  missing value where TRUE/FALSE needed
-Calls: run_momma -> get_input_data -> check_observations
-Execution halted
+"""
+  option_list <- list(
+    make_option(c("-i", "--index"), type = "integer", default = -256, help = "Index to run on"),
+    make_option(c("-b", "--bucket_key"), type = "character", default = "", help = "Bucket key to find the sos"),
+    make_option(c("-r", "--reaches_json"), type = "character", default = NULL, help = "Name of reaches.json"),
+    make_option(c("-m", "--min_nobs"), type = "character", default = NULL, help = "Minimum number of observations for a reach to have to be considered valid"),
+    make_option(c("-c", "--constrained"), action = "store_true", default = FALSE, help = "Indicate constrained run")
+  )
+  """

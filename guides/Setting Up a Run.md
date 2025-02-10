@@ -68,32 +68,14 @@ docker push travissimmons/{module name}
 
 
 
-
-
-<!-- - download input files
-    - link to sword
-        - https://drive.google.com/file/d/1Z7bAPSh4jcj0-jJ5ipcFMAsxTFTCJCxP/view?usp=drive_link
-    - link to sos
-        - https://drive.google.com/file/d/1MrRx6TrCEcAABE6TXg4YWGaeCJvPloAm/view
-    - Link to startup mnt
-        - download link for devset jsons in the correct file structure
-
-Here I want to have a link to the most recent full mnt with files like reaches.json.template etc 
-
-
-
-
-
-### Before moving on ensure you have this file structure
-- setup file structure (this is taken care of if you download the startup jsons above)
-
+### Confluence Directory structure
     - mnt
         - input
-            - sos (sos goes here)
+            - sos (priors sos goes here)
             - sword (sword files go here)
             - swot (swot timeseries files will be generated here)
             - gage (gauge data go here)
-            - reaches.json that lists what reaches you would like to produce discharge for
+            - reaches_of_interest.json that lists what reaches you would like to produce discharge parameters for
         - diagnostics
             - prediagnostics
             - postdiagnostics
@@ -101,18 +83,17 @@ Here I want to have a link to the most recent full mnt with files like reaches.j
                 - reach
         -flpe
             - metroman
+                - sets
             - neobam
             - sic4dvar
             - hivdi
             - sad
             - momma
         - output
-            - sos
+            - sos (your results files will be here)
         - validation
             - stats
             - figs
         - offline
         - moi
         
-
-- proceed to next section -->

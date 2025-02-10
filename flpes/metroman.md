@@ -25,5 +25,30 @@ singularity run --env AWS_BATCH_JOB_ID="foo" --bind mnt/input:/mnt/data/input,mn
  
 ## Arguments
 
+def create_args():
+    """Create and return argparsers with command line arguments."""
+    
+    arg_parser = argparse.ArgumentParser(description='Integrate FLPE')
+    arg_parser.add_argument('-i',
+                            '--index',
+                            type=int,
+                            default = -235,
+                            help='Index to specify input data to execute on')
+    arg_parser.add_argument('-r',
+                            '--reachjson',
+                            type=str,
+                            help='Name of the reach.json',
+                            default='metrosets.json')
+    arg_parser.add_argument('-v',
+                            '--verbose',
+                            help='Indicates verbose logging',
+                            action='store_true')
+    arg_parser.add_argument('-s',
+                            '--sosbucket',
+                            type=str,
+                            help='Name of the SoS bucket and key to download from',
+                            default='')
+    return arg_parser
+
 
 #### Dev notes....
