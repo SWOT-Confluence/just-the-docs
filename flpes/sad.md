@@ -2,7 +2,7 @@
 layout: home
 title: "sad"
 nav_order: 2
-parent: flpes
+parent: FLPE Modules
 ---
 
 # Input

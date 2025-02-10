@@ -2,7 +2,7 @@
 layout: home
 title: "metroman"
 nav_order: 2
-parent: flpes
+parent: FLPE Modules
 ---
 
 # Input

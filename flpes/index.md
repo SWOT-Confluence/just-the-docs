@@ -1,5 +1,5 @@
 ---
-title: flpes
+title: FLPE Modules
 layout: home
 nav_order: 5
 ---
