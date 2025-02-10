@@ -23,4 +23,31 @@ singularity build valdation.simg docker://travissimmons/validation
 
 ## Arguments
 
+def create_args():
+    """Create and return argparsers with command line arguments."""
+    
+    arg_parser = argparse.ArgumentParser(description='Integrate FLPE')
+    arg_parser.add_argument('-i',
+                            '--index',
+                            type=int,
+                            # default=-235,
+                            help='Index to specify input data to execute on')
+    arg_parser.add_argument('-r',
+                            '--reachjson',
+                            type=str,
+                            help='Name of the reaches.json',
+                            default='reaches.json')
+    arg_parser.add_argument('-t',
+                            '--runtype',
+                            type=str,
+                            help='Indicates constrained or unconstrained run',
+                            choices=['constrained', 'unconstrained'],
+                            default='unconstrained')
+    arg_parser.add_argument('-s',
+                            '--sosbucket',
+                            type=str,
+                            help='Name of the SoS bucket and key to download from',
+                            default='')
+    return arg_parser
+
 #### Dev notes....

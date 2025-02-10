@@ -26,7 +26,11 @@ singularity run --bind mnt/input:/mnt/data/input,mnt/diagnostics/prediagnostics:
 
 
 ## Arguments
-
+option_list <- list(
+  make_option(c("-i", "--index"), type = "integer", default = NULL, help = "Index to run on"),
+  make_option(c("-b", "--config_bucket"), type = "character", default = "", help = "Bucket key to find the sos"),
+  make_option(c("-r", "--reaches_json"), type = "character", default = "reaches.json", help = "Name of reaches.json")
+)
 
 #### Dev notes....
 Had to turn of hydat and upload functions in order to get it running, need to make an hpc or offline flag...not currently on a branch...

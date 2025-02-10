@@ -24,6 +24,15 @@ singularity run --bind mnt/input:/mnt/data/input,mnt/flpe:/mnt/data/flpe,mnt/dia
 
 ## Arguments
 
+option_list <- list(
+  make_option(c("-i", "--index"), type = "integer", default = NULL, help = "Index to run on"),
+  make_option(c("-t", "--tolerance"), type = "integer", default = 0.25, help = "Tolerance value for stability check"),
+  make_option(c("-b", "--current_bucket"), type = "character", default = "", help = "Bucket key to find the sos"),
+  make_option(c("-r", "--reaches_json"), type = "character", default = "reaches.json", help = "Name of reaches.json"),
+  make_option(c("-l", "--local_bool"), type = "logical", default = FALSE, help = "Name of reaches.json"),
+  make_option(c("-p", "--previous_bucket"), type = "character", default = "confluence-sos", help = "Name of SoS bucket to pull previous results")
+)
+
 #### Dev notes....
 
 ERROR

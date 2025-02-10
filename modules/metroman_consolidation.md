@@ -25,5 +25,22 @@ singularity run --bind mnt/input:/mnt/input,mnt/flpe/metroman:/mnt/flpe metroman
  
 ## Arguments
 
+def get_args():
+    """Get command-line arguments"""
+
+    parser = argparse.ArgumentParser(
+        description='Rock the Casbah',
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+    parser.add_argument('-i',
+                        '--index',
+                        help='index of continent to process',
+                        metavar='int',
+                        type=int,
+                        )
+
+
+    return parser.parse_args()
+
 
 #### Dev notes....

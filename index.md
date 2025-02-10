@@ -5,8 +5,7 @@ nav_order: 1
 
 ---
 
-# Welcome to the Just the Docs Template
+# Confluence Documentation
 
-This is your homepage. Use the links in the navigation bar to explore!
-
+This is the eventual home of all Confluence documentation.
 
