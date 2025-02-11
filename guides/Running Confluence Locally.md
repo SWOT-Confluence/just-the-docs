@@ -11,7 +11,7 @@ parent: Guides
 
 Running anything locally can use up to 12GB RAM and 100GB storage, running one off modules besides priors will need much less
 
-Running with no customization requires on local machine or HPC: singularity or apptainer
+Running with no customization on local machine or HPC requires: singularity or apptainer
 
 Local machine runs with customization requires: sudo and docker
 
@@ -47,7 +47,9 @@ Edit empty_mnt/input/reaches_of_interest.json to be a list of reaches you want t
 git clone https://github.com/SWOT-Confluence/run-confluence-locally.git
 
 ## Customizing a module, and then only running on your local machine (hours to process end to end, great for one module changes)
-Install docker on local machine / server where you have sudo
+
+### Install docker on local machine / server where you have sudo
+https://docs.docker.com/engine/install/
 
 Git clone it
 
@@ -109,6 +111,7 @@ edit cfl_SLURM_wrapper.sh for bulk submission (SLRUM only) or edit the generated
 
 run bash cfl_wrapper.sh to launch the job
 
+# Module Descriptions
 
 | Module                 | Number of Jobs                   | Description                                                                                                                    |
 |------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -133,7 +136,7 @@ run bash cfl_wrapper.sh to launch the job
 
 
 
-### Confluence Directory structure
+# Confluence Directory structure
     - mnt
         - input
             - sos (priors sos goes here)
