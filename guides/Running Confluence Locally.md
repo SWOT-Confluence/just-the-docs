@@ -32,12 +32,10 @@ download empty_mnt.tar.gz from tinyurl.com/swot-france-2025
 ### Download complete directory if you want to just run a one off module eg: an FLPE
 
 Either:
-(pip or conda) install gdown
-
-gdown 1xRltFZ1gyP_nvwHMJW-rIgClzXx8CSLC
+UPLOADING SOON
 
 or:
-download empty_mnt.tar.gz from tinyurl.com/swot-france-2025
+UPLOADING SOON
 
 ### Decompress
 tar -xzvf {whichever tar.gz you downloaded}
@@ -110,11 +108,6 @@ setup and run run-confluence-locally/run_confluence_HPC.ipynb to generate a subm
 edit cfl_SLURM_wrapper.sh for bulk submission (SLRUM only) or edit the generated .sh file to submit custom arrays
 
 run bash cfl_wrapper.sh to launch the job
-
-### TO DO
-Add a recent full run download 
-add list of resources to presentation
-QR Code
 
 
 | Module                 | Number of Jobs                   | Description                                                                                                                    |
