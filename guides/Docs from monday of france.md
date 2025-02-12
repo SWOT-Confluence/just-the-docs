@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "Docs from monday of france"
-nav_order: 1
+nav_order: 3
 parent: Guides
 ---
 

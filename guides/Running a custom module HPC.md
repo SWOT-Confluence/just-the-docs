@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "Running a custom module HPC"
-nav_order: 1
+nav_order: 2
 parent: Guides
 ---
 
