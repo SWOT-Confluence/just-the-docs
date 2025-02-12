@@ -5,16 +5,16 @@ nav_order: 1
 parent: Guides
 ---
 
-## Customizing a module, and then running on your local machine (you need sudo)
+# Customizing a module, and then running on your local machine (you need sudo)
 
-### Install docker on local machine / server where you have sudo
+## Install docker on local machine / server where you have sudo
 https://docs.docker.com/engine/install/
 
-### Git clone the run-confluence-locally repo
+## Git clone the run-confluence-locally repo
 
 ''' git Command here '''
 
-###  Git clone the modules that you are intersted in running, 
+##  Git clone the modules that you are intersted in running, 
 '' git Coommand here '''
 
 if you are starting with empty_mnt and are interestd in running a module in the middle of a run, you must run all the previous modules once. 
