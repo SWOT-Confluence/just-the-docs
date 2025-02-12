@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Running Confluence Locally"
+title: "Docs from monday of france"
 nav_order: 1
 parent: Guides
 ---

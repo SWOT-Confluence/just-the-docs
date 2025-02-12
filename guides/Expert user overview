@@ -1,0 +1,24 @@
+---
+layout: home
+title: "Expert user overview"
+nav_order: 1
+parent: Guides
+---
+
+Here is a rundown to skip the notebooks.
+
+
+To devlop locally and then run at scale:
+
+* Download the empty directory structure from google drive
+* grab all the confluence repos leading up to the module you care about, skip priors and before you run prediagnostics, make a copy of the swot data at /empty_mnt/input/swot
+* for each module (setfinder as an example):
+    * make changes if you want
+    * cd setfinder
+    * docker build -t travissimmons/setfinder:latest .
+    * look at the setfinder module page on this website that has the docker run command, and run it to test on some reaches
+    * make a repo on your dockerhub for it, mine is called setfinder
+    * docker docker push travissimmons/setfinder:latest
+    * go on your hpc that has singularity or apptainer
+    * singularity build setfinder.simg docker://travissimmons/setfinder
+    * write a job submissoin script to run it (the run commands are on the module page on this website)
